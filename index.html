@@ -20,42 +20,46 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <article>
-      <picture>
-        <source
-          media="(min-width: 37.5rem)"
-          srcset="./images/image-product-desktop.jpg"
-          alt="Gabrielle Essence Eau de Parfum" />
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="Gabrielle Essence Eau de Parfum" />
-      </picture>
-      <div class="product-body">
-        <span class="product-category">Perfume</span>
-        <h3>Gabrielle Essence Eau De Parfum</h3>
-        <p>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div
-          class="product-price"
-          itemprop="offers"
-          itemscope
-          itemtype="https://schema.org/Offer">
-          <meta itemprop="priceCurrency" content="USD" />
-          <meta itemprop="price" content="149.99" />
-          <span class="sr-only"> $149.99 US dollars </span>
-          <div class="price">
-            <span class="price-currency" aria-hidden="true">$</span>
-            <span itemprop="price" aria-hidden="true">149.99</span>
+    <main>
+      <article>
+        <picture>
+          <source
+            media="(min-width: 37.5rem)"
+            srcset="./images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau de Parfum" />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Gabrielle Essence Eau de Parfum" />
+        </picture>
+        <div class="product-body">
+          <p class="product-category">Perfume</p>
+          <h3>Gabrielle Essence Eau De Parfum</h3>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div
+            class="product-price"
+            itemprop="offers"
+            itemscope
+            itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="USD" />
+            <meta itemprop="price" content="149.99" />
+            <span class="sr-only"> $149.99 US dollars </span>
+            <div class="price">
+              <span class="price-currency" aria-hidden="true">$</span>
+              <span itemprop="price" aria-hidden="true">149.99</span>
+            </div>
+            <del class="price-old"
+              ><span class="sr-only">Original price: </span>$169.99</del
+            >
           </div>
-          <del class="price-old" aria-label="Original price">$169.99</del>
+          <button type="button">
+            <img src="./images/ShoppingCart.svg" alt="shopping cart icon" />
+            <span>Add to Cart</span>
+          </button>
         </div>
-        <button type="button">
-          <img src="./images/ShoppingCart.svg" alt="shopping cart icon" />
-          <span>Add to Cart</span>
-        </button>
-      </div>
-    </article>
+      </article>
+    </main>
   </body>
 </html>
